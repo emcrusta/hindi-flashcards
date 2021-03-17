@@ -1,0 +1,157 @@
+[
+	{
+		"id": "1",
+		"question": "अ",
+		"answer": "a"
+	},
+	{
+		"id": "2",
+		"question": "आ",
+		"answer": "aa"
+	},
+	{
+		"id": "3",
+		"question": "क",
+		"answer": "ka"
+	},
+	{
+		"id": "4",
+		"question": "च",
+		"answer": "cha"
+	},
+	{
+		"id": "5",
+		"question": "प",
+		"answer": "pa"
+	},
+	{
+		"id": "6",
+		"question": "म",
+		"answer": "ma"
+	},
+	{
+		"id": "7",
+		"question": "य",
+		"answer": "ya"
+	},
+	{
+		"id": "8",
+		"question": "र",
+		"answer": "ra"
+	},
+	{
+		"id": "9",
+		"question": "ल",
+		"answer": "la"
+	},
+	{
+		"id": "10",
+		"question": "त",
+		"answer": "ta"
+	},
+	{
+		"id": "11",
+		"question": "न",
+		"answer": "na"
+	},
+	{
+		"id": "12",
+		"question": "व",
+		"answer": "va"
+	},
+	{
+		"id": "13",
+		"question": "ग",
+		"answer": "ga"
+	},
+	{
+		"id": "14",
+		"question": "ह",
+		"answer": "ha"
+	},
+	{
+		"id": "15",
+		"question": "छ",
+		"answer": "chha"
+	},
+	{
+		"id": "16",
+		"question": "ज",
+		"answer": "ja"
+	},
+	{
+		"id": "17",
+		"question": "इ",
+		"answer": "e"
+	},
+	{
+		"id": "18",
+		"question": "द",
+		"answer": "da"
+	},
+	{
+		"id": "19",
+		"question": "ब",
+		"answer": "ba"
+	},
+	{
+		"id": "20",
+		"question": "स",
+		"answer": "sa"
+	},
+	{
+		"id": "21",
+		"question": "ड",
+		"answer": "dha"
+	},
+	{
+		"id": "22",
+		"question": "ई",
+		"answer": "ee"
+	},
+	{
+		"id": "23",
+		"question": "घ",
+		"answer": "gha"
+	},
+	{
+		"id": "24",
+		"question": "श",
+		"answer": "sha"
+	},
+	{
+		"id": "25",
+		"question": "ट",
+		"answer": "ta (soft)"
+	},
+	{
+		"id": "26",
+		"question": "ठ",
+		"answer": "ta (hard)"
+	},
+	{
+		"id": "27",
+		"question": "उ",
+		"answer": "u"
+	},
+	{
+		"id": "28",
+		"question": "ध",
+		"answer": "dha"
+	},
+	{
+		"id": "29",
+		"question": "ष",
+		"answer": "sha (short)"
+	},
+	{
+		"id": "30",
+		"question": "ख",
+		"answer": "kha"
+	},
+	{
+		"id": "31",
+		"question": "झ",
+		"answer": "jha"
+	}
+]
