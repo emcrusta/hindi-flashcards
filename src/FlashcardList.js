@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import Flashcard from './Flashcard';
 import Navigation from './Navigation';
 
@@ -26,8 +26,8 @@ const FlashcardList = ({ flashcards }) => {
 	return (
 		<div className="card-grid">
 			<Flashcard
-				flashcard={flashcards[card]}
-				key={flashcards[0].id}
+				flashcard={flashcards[card] ? flashcards[card] : []}
+				key={flashcards[card] ? flashcards[card].id : null}
 				flip={flip}
 				flipFunc={() => setFlip(!flip)}
 			/>
