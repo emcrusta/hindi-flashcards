@@ -1,33 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat&display=swap');
+
+:root {
+	--primary: #ac3b61;
+	--secondary: #123c69;
+	--mid: #6b3c65;
+	--dark: #bab2b5;
+	--light: #eee2dc;
+}
+
 body {
-	background-color: #c8d0d2;
-	font-size: 50px;
-}
-
-.card-grid {
-	display: grid;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
 	justify-content: center;
+	font-family: 'Kalam', cursive;
+	background-color: var(--dark);
 }
 
-.nav-buttons {
-	margin-top: 10px;
-	margin: auto;
+.card-grid: {
+	width: 100vw;
 }
 
 button {
+	color: var(--light);
 	padding: 10px;
-	margin: 10px;
+	background-color: var(--mid);
+	border-radius: 12px;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--primary);
+}
+
+button:focus {
+	outline: none;
+}
+
+.nav-buttons {
+	grid-column: 1/2;
+	padding: 15px;
+}
+.prev-button {
+	float: left;
+}
+.next-button {
+	float: right;
 }
 
 .card {
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary),
+		var(--secondary)
+	);
+	color: var(--light);
+	font-size: 5rem;
+	grid-column: 1/2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	border-radius: 0.25rem;
-	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
-	background-color: white;
-	height: 150px;
-	width: 300px;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
+	min-height: 250px;
+	width: 100%;
 
 	transform-style: preserve-3d;
 	transition: 150ms;
@@ -38,7 +81,7 @@ button {
 
 .card:hover {
 	--translate-y: -2px;
-	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.5);
 }
 .card.flip {
 	--rotate-y: 180deg;
@@ -49,6 +92,9 @@ button {
 	position: absolute;
 	padding: 1rem;
 	backface-visibility: hidden;
+}
+
+.card .front {
 }
 
 .card .back {
