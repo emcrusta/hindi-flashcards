@@ -12,6 +12,7 @@ function App() {
 	}, []);
 	return (
 		<div>
+			{' '}
 			<FlashcardList flashcards={flashcards} />
 		</div>
 	);
