@@ -12,13 +12,13 @@ function App() {
 			.then(res => res.json())
 			.then(categories => setCategories(categories));
 	}, []);
-	// loads up our letter cards initially
+	// loads up letter cards initially
 	useEffect(() => {
 		fetch('./letter-cards.json')
 			.then(res => res.json())
 			.then(flashcards => setFlashcards(flashcards));
 	}, []);
-
+	// handles card category selection
 	function handleSelect(event) {
 		event.preventDefault();
 		fetch(categoryEl.current.value)
