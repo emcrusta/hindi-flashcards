@@ -45,13 +45,12 @@ button:focus {
 
 .nav-buttons {
 	grid-column: 1/2;
-	padding: 15px;
+	padding: 12px;
 }
+
 .prev-button {
-	float: left;
-}
-.next-button {
-	float: right;
+	padding: 10px;
+	margin-right: 12px;
 }
 
 .card {

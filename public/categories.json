@@ -1,0 +1,12 @@
+[
+	{
+		"id": "1",
+		"file": "./letter-cards.json",
+		"name": "Letters"
+	},
+	{
+		"id": "2",
+		"file": "./color-cards.json",
+		"name": "Colors"
+	}
+]

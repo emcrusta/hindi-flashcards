@@ -1,0 +1,67 @@
+[
+	{
+		"id": "1",
+		"question": "गुलाबी",
+		"answer": "pink"
+	},
+	{
+		"id": "2",
+		"question": "काला",
+		"answer": "black"
+	},
+	{
+		"id": "3",
+		"question": "सफेद",
+		"answer": "white"
+	},
+	{
+		"id": "3",
+		"question": "लाल",
+		"answer": "red"
+	},
+	{
+		"id": "4",
+		"question": "नीला",
+		"answer": "blue"
+	},
+	{
+		"id": "5",
+		"question": "पीला",
+		"answer": "yellow"
+	},
+	{
+		"id": "6",
+		"question": "नारंगी",
+		"answer": "orange"
+	},
+	{
+		"id": "7",
+		"question": "हरा",
+		"answer": "green"
+	},
+	{
+		"id": "8",
+		"question": "नीलम",
+		"answer": "indigo"
+	},
+	{
+		"id": "9",
+		"question": "केसरी",
+		"answer": "saffron"
+	},
+	{
+		"id": "10",
+		"question": "बैंगनी",
+		"answer": "purple"
+	},
+	{
+		"id": "11",
+		"question": "भूरा",
+		"answer": "brown"
+	},
+	{
+		"id": "12",
+		"question": "धूसर",
+		"answer": "grey"
+	}
+]
