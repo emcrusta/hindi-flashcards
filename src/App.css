@@ -8,49 +8,37 @@
 	--light: #eee2dc;
 }
 
-body {
-	margin: 0;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.app-container {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 31.25em;
 	font-family: 'Montserrat', sans-serif;
-	background-color: var(--dark);
 }
 
-.card-grid: {
-	width: 100vw;
+.card-grid {
+	width: 100%;
 }
 
-button {
+.nav-button {
 	color: var(--light);
-	padding: 10px;
+	padding: 0.75em;
+	margin: 1em 0.75em 0;
 	background-color: var(--mid);
-	border-radius: 12px;
+	border-radius: 0.75em;
 	border: none;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: 700;
 	cursor: pointer;
 }
 
-button:hover {
+.nav-button:hover {
 	background-color: var(--primary);
 }
 
-button:focus {
+.nav-button:focus {
 	outline: none;
-}
-
-.nav-buttons {
-	grid-column: 1/2;
-	padding: 12px;
-}
-
-.prev-button {
-	padding: 10px;
-	margin-right: 12px;
 }
 
 .card {
@@ -60,16 +48,15 @@ button:focus {
 		var(--secondary)
 	);
 	color: var(--light);
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: 'Kalam', cursive;
-	grid-column: 1/2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	border-radius: 12px;
 	box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
-	min-height: 250px;
+	min-height: 3.9em;
 	width: 100%;
 
 	transform-style: preserve-3d;
@@ -100,23 +87,26 @@ button:focus {
 
 .input-form {
 	color: var(--primary);
-	padding: 10px;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	padding-bottom: 0.75em;
 	border: none;
+}
+
+.form-el {
+	padding: 0.75em;
+	margin: 1em 0.75em 0;
+	font-weight: 700;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .input-form select {
 	font-family: Montserrat, sans-serif;
 	background-color: var(--mid);
-	padding: 2px;
+	padding: 0.75em;
 	margin-left: 10px;
 	color: var(--light);
-	border-radius: 6px;
+	border-radius: 0.75em;
 	font-size: 1rem;
-	text-transform: lowercase;
-	font-weight: bold;
 }
 
 select:focus {

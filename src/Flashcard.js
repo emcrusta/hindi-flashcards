@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Flashcard = ({ flashcard, flip, flipFunc }) => {
 	return (

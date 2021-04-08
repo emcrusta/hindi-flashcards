@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import FlashcardList from './FlashcardList';
+import Navigation from './Navigation';
 import './app.css';
 
 function App() {
 	const [flashcards, setFlashcards] = useState([]);
 	const [categories, setCategories] = useState([]);
+	const [card, setCard] = useState(0);
+	const [flip, setFlip] = useState(false);
 	const categoryEl = useRef();
 
 	useEffect(() => {
@@ -19,22 +22,44 @@ function App() {
 			.then(flashcards => setFlashcards(flashcards));
 	}, []);
 	// handles card category selection
-	function handleSelect(event) {
+	const handleSelect = event => {
 		event.preventDefault();
 		fetch(categoryEl.current.value)
 			.then(res => res.json())
 			.then(flashcards => setFlashcards(flashcards));
-	}
+		setCard(0);
+		setFlip(false);
+	};
+
+	const nextCard = event => {
+		if (card < flashcards.length - 1) {
+			setCard(card + 1);
+			setFlip(false);
+		} else {
+			alert(`You've reached the last flashcard.`);
+		}
+	};
+	const prevCard = event => {
+		if (card > 0) {
+			setCard(card - 1);
+			setFlip(false);
+		} else {
+			alert(`You've reached the first flashcard.`);
+		}
+	};
 
 	return (
-		<div>
+		<div className="app-container">
 			<form className="input-form" action="">
 				<div className="form-group">
-					<label htmlFor="category">Select a Category</label>
+					<label className="form-el" htmlFor="category">
+						Select a Category
+					</label>
 					<select
+						className="form-el"
 						id="category"
 						ref={categoryEl}
-						onClick={handleSelect}
+						onChange={handleSelect}
 					>
 						{categories.map(category => {
 							return (
@@ -46,7 +71,13 @@ function App() {
 					</select>
 				</div>
 			</form>
-			<FlashcardList flashcards={flashcards} />
+			<FlashcardList
+				flashcards={flashcards}
+				card={card}
+				flip={flip}
+				flipFunc={() => setFlip(!flip)}
+			/>
+			<Navigation next={nextCard} prev={prevCard} />
 		</div>
 	);
 }
