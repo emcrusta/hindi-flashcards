@@ -1,3 +1,10 @@
+# Hindi Flashcards
+Designed to complement my mobile redesign of http://learning-hindi.com. 
+This flashcard application features two decks of cards so Hindi students can practice Devanagari script.
+
+## Try the flashcard app live
+https://emcrusta.github.io/hindi-learning-mobile/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
